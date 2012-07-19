@@ -14,16 +14,16 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 	public static final String TABLE_CATEGORIES = "categories";
 	public static final String COLUMN_CID = "_cid";
 	public static final String COLUMN_CNAME = "name";
-	public static final String COLUMN_ACTID1 = "act1id";
-	public static final String COLUMN_ACTID2 = "act2id";
-	public static final String COLUMN_ACTID3 = "act3id";
+	public static final String COLUMN_ACTID1 = "activity1id";
+	public static final String COLUMN_ACTID2 = "activity2id";
+	public static final String COLUMN_ACTID3 = "activity3id";
 	
 	public static final String TABLE_GOALS = "goals";
 	public static final String COLUMN_GID = "_gid";
-	public static final String COLUMN_CATID = "_gcatid";
-	public static final String COLUMN_ACTID = "_gactid";
-	public static final String COLUMN_AMTSAVED = "amtsaved";
-	public static final String COLUMN_AMTTOTAL = "amttotal";
+	public static final String COLUMN_CATID = "_gcategoryid";
+	public static final String COLUMN_ACTID = "_gactivityid";
+	public static final String COLUMN_AMTSAVED = "amounttsaved";
+	public static final String COLUMN_AMTTOTAL = "amounttotal";
 	
 	public static final String TABLE_RECURRING = "recurring";
 	public static final String COLUMN_RID = "_rid";
