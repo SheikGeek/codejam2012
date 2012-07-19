@@ -2,7 +2,7 @@ package com.example.Minteen;
 
 public class Categories {
 
-	String name; 	//name of category
+	String name; 	 //name of category
 	int activityID1; //id of activity 1
 	int activityID2; //id of activity 2
 	int activityID3; //id of activity 3

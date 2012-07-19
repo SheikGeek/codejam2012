@@ -4,7 +4,7 @@ public class Recurring {
 
 	 int recurrId;  //ID of recurring deposit
 	 String name;	//name of recurring deposit
-	 int amount;	//amount of recurring deposit
+	 double amount;	//amount of recurring deposit
 	 int frequency; //how frequent deposit is made
 	 long  startDate;
 	 long nextDate;
@@ -40,11 +40,11 @@ public class Recurring {
 		 this.name = name;
 	 }
 	 
-	 public int getAmount(){
+	 public double getAmount(){
 		 return amount;
 	 }
 	 
-	 public void setAmount(int amount){
+	 public void setAmount(double amount){
 		 this.amount = amount;
 	 }
 	 
