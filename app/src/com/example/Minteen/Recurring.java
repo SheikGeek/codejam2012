@@ -73,31 +73,6 @@ public class Recurring {
 	 public void setNextDate(long nextDate){
 		 this.nextDate = startDate;
 	 }
-	 
-	 private void calculateNextDepositDate(){
-		
-     }
-
-	 private boolean checkCurrDate() {
-		return false;
-	 }
-	
-	 private void createRecurringIncome() {
-		
-	 }
-	
-	 private double retrieveRecurringIncome() {
-		return 0;
-	 }
-	 
-	 private double[] retrieveRecurringIncomes() {
-		double[] recurringIncomes = null;
-		return recurringIncomes;
-	 }
-	
-	 private void deleteRecurringIncome() {
-		
-	 }
 
 	 public static void main(String[] args) {
 		
