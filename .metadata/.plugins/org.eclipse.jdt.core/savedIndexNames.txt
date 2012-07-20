@@ -1,4 +1,0 @@
-INDEX VERSION 1.126+/Users/nmudaliar/Documents/codejam2012/.metadata/.plugins/org.eclipse.jdt.core
-4259240308.index
-1760137943.index
-2043072900.index
