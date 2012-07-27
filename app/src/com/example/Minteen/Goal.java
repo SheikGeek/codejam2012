@@ -16,7 +16,6 @@ public class Goal extends Activity {
 	public double amountTotal;
 	public int isDone;
 	
-
 	
 	public Goal(int goalId, int categoryId, double amountSaved, double amountTotal, int isDone, String activityName, double activityPrice, int activityId){
 		super(activityId, activityName, activityPrice);
