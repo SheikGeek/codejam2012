@@ -1,8 +1,27 @@
-<resources>
+<resources>  
 
-    <string name="app_name">Minteen</string>
+    <string name="app_name">DoughGO</string>
     <string name="hello_world">Hello world!</string>
-    <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">MainActivity</string>
-
+    <string name="title_activity_main"></string>
+    <string name="piggyBank">Piggy Bank</string>
+	<string name="goals">Goals</string>
+	<string name="suggestions">Suggestions</string>
+	<string name="category">Categories</string>
+	<string name="editF">Edit Funds</string>
+	<string name="home">Home</string>
+	<string name="addG">Add Goals</string>
+	<string name="fashion">SFBAZAR Fashion Week ticket: $35</string>
+	<string name="travel">4 wheel roller suitcase: $150</string>
+	<string name="sports">Giants tickets: $30</string>
+	<string name="sportsGoal">Buy Football: $40                                              Edit</string>
+	<string name="travelGoal">Go To France: $400                                         Edit</string>
+	<string name="fashionGoal">Attend Fashion Week: $1000                         Edit</string>
+	<string name="fashionGoal2">Buy Dress: $1000                         Edit</string>
+	<string name="currGoal">Current Goal</string>
+	<string name="addGoal">Add a Goal</string>
+	<string name="ok">Ok</string>
+	<string name="cancel">Cancel</string>
+	<string name="amount">Amount</string>
+	<string name="name">Name</string>
+	<string name="date">Date</string>
 </resources>

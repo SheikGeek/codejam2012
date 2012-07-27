@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/whitebg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:background="#11aabb"
+        android:height="80dp"
+        android:padding="20dp"
+        android:text="@string/addGoal"
+        android:textSize="30dp"
+        android:width="460dp" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:listitem="@android:layout/simple_spinner_item" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#eedddd"
+            android:height="40dp"
+            android:padding="10dp"
+            android:text="@string/fashionGoal2"
+            android:textColor="#bb9999"
+            android:width="160dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="CheckBox" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#eedddd"
+            android:height="40dp"
+            android:padding="10dp"
+            android:text="@string/travelGoal"
+            android:textColor="#bb9999"
+            android:width="160dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_weight="3.20"
+            android:text="CheckBox" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#eedddd"
+            android:height="40dp"
+            android:padding="10dp"
+            android:text="@string/sportsGoal"
+            android:textColor="#bb9999"
+            android:width="160dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_weight="3.20"
+            android:text="CheckBox" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:background="#aa9999"
+            android:height="35dp"
+            android:padding="10dp"
+            android:text="@string/ok"
+            android:textColor="#d05546"
+            android:width="100dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#aa9999"
+            android:height="35dp"
+            android:padding="10dp"
+            android:text="@string/cancel"
+            android:textColor="#d05546"
+            android:width="100dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="70dp"
+            android:background="#8ebc92"
+            android:clickable="true"
+            android:height="80dp"
+            android:text="@string/editF"
+            android:textColor="#ffddee"
+            android:width="100dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="70dp"
+            android:background="#e8c458"
+            android:clickable="true"
+            android:height="80dp"
+            android:text="@string/home"
+            android:textColor="#ffddee"
+            android:width="100dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="70dp"
+            android:background="#d05546"
+            android:clickable="true"
+            android:height="80dp"
+            android:text="@string/addG"
+            android:textColor="#ffddee"
+            android:width="100dp" />
+    </LinearLayout>
+
+</LinearLayout>

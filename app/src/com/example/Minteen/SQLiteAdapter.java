@@ -1,11 +1,13 @@
 package com.example.Minteen;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
 
-public class MySQLiteHelper extends SQLiteOpenHelper {
+public class SQLiteAdapter {
 	public static final String TABLE_ACTIVITIES = "activities";
 	public static final String COLUMN_AID = "_aid";
 	public static final String COLUMN_ANAME = "name";
@@ -70,26 +72,75 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 			COLUMN_FREQUENCY + " integer not null, " +
 			COLUMN_STARTDATE + " timestamp not null, " +
 			COLUMN_NEXTDATE + " timestamp not null );";
+	
+ private SQLiteHelper sqLiteHelper;
+ private SQLiteDatabase sqLiteDatabase;
 
-	public MySQLiteHelper(Context context) {
-		super(context, DATABASE_NAME, null, DATABASE_VERSION);
-	}
+ private Context context;
+ 
+ public SQLiteAdapter(Context c){
+  context = c;
+ }
+ 
+ public SQLiteAdapter openToRead() throws android.database.SQLException {
+  sqLiteHelper = new SQLiteHelper(context);
+  sqLiteDatabase = sqLiteHelper.getReadableDatabase();
+  return this; 
+ }
+ 
+ public SQLiteAdapter openToWrite() throws android.database.SQLException {
+  sqLiteHelper = new SQLiteHelper(context);
+  sqLiteDatabase = sqLiteHelper.getWritableDatabase();
+  return this; 
+ }
+ 
+ public void close(){
+  sqLiteHelper.close();
+ }
+ 
+// public long insert(String content){
+//  
+//  ContentValues contentValues = new ContentValues();
+//  contentValues.put(KEY_CONTENT, content);
+//  return sqLiteDatabase.insert(DATABASE_TABLE, null, contentValues);
+// }
+// 
+// public int deleteAll(){
+//  return sqLiteDatabase.delete(MYDATABASE_TABLE, null, null);
+// }
+// 
+// public String queueAll(){
+//  String[] columns = new String[]{KEY_CONTENT};
+//  Cursor cursor = sqLiteDatabase.query(MYDATABASE_TABLE, columns, 
+//    null, null, null, null, null);
+//  String result = "";
+//  
+//  int index_CONTENT = cursor.getColumnIndex(KEY_CONTENT);
+//  for(cursor.moveToFirst(); !(cursor.isAfterLast()); cursor.moveToNext()){
+//   result = result + cursor.getString(index_CONTENT) + "\n";
+//  }
+// 
+//  return result;
+// }
+ 
+ public class SQLiteHelper extends SQLiteOpenHelper {
 
-	@Override
-	public void onCreate(SQLiteDatabase database) {
-		database.execSQL(DATABASE_CREATE);
-	}
+  public SQLiteHelper(Context context) {
+   super(context, DATABASE_NAME, null, DATABASE_VERSION);
+  }
 
-	@Override
-	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-		Log.w(MySQLiteHelper.class.getName(),
-				"Upgrading database from version " + oldVersion + " to "
-						+ newVersion + ", which will destroy all old data");
-		db.execSQL("DROP TABLE IF EXISTS " + TABLE_ACTIVITIES);
-		db.execSQL("DROP TABLE IF EXISTS " + TABLE_CATEGORIES);
-		db.execSQL("DROP TABLE IF EXISTS " + TABLE_GOALS);
-		db.execSQL("DROP TABLE IF EXISTS " + TABLE_RECURRING);
-		
-		onCreate(db);
-	}
+  @Override
+  public void onCreate(SQLiteDatabase db) {
+   // TODO Auto-generated method stub
+   db.execSQL(DATABASE_CREATE);
+  }
+
+  @Override
+  public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+   // TODO Auto-generated method stub
+
+  }
+
+ }
+ 
 }

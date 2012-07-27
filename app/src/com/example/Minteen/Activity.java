@@ -17,6 +17,10 @@ this.activityId = activityId;
 this.activityName = activityName;
 this.activityPrice = activityPrice;
 }
+
+public Activity(){
+}
+
 public String getActivityName() {
 return activityName;
 }

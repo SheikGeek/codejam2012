@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/whitebg" >
+
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:width="460dp"
+        android:height="80dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/suggestions"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="460dp"
+        android:height="40dp"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:textColor="#bb9999"
+        android:text="@string/fashion"
+        android:background="#eedddd" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="460dp"
+        android:height="40dp"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:textColor="#bb9999"
+        android:text="@string/sports"
+        android:background="#eedddd" />
+        
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="460dp"
+        android:height="40dp"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:textColor="#bb9999"
+        android:text="@string/travel"
+        android:background="#eedddd" />
+   
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="140dp"
+            android:height="80dp"
+            android:text="@string/editF"
+            android:width="100dp"
+            android:background="#8ebc92"
+            android:textColor="#ffddee" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="140dp"
+            android:height="80dp"
+            android:text="@string/home"
+            android:width="100dp"
+            android:background="#e8c458"
+            android:textColor="#ffddee" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="140dp"
+            android:height="80dp"
+            android:text="@string/addG"
+            android:width="100dp"
+            android:background="#d05546"
+            android:textColor="#ffddee" />
+    </LinearLayout>
+
+</LinearLayout>

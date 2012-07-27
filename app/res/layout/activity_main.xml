@@ -1,14 +1,143 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/whitebg" >
+
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:width="460dp"
+        android:height="80dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/piggybank" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:width="460dp"
+        android:height="80dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/goals" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:width="460dp"
+        android:height="80dp"
+        android:layout_margin="5dp"
+android:background="@drawable/suggestions"
+ />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="100dp"
+            android:height="80dp"
+            android:text="@string/editF"
+            android:width="100dp"
+            android:background="#8ebc92"
+            android:textColor="#ffddee" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="100dp"
+            android:height="80dp"
+            android:text="@string/home"
+            android:width="100dp"
+            android:background="#e8c458"
+            android:textColor="#ffddee" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="100dp"
+            android:height="80dp"
+            android:text="@string/addG"
+            android:width="100dp"
+            android:background="#d05546"
+            android:textColor="#ffddee" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="160px"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world"
-        tools:context=".MainActivity" />
+        android:text="Dashboard" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="160px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Add Goal" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="160px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button2"
+        android:text="Edit Funds" />
+
+    
+<shape
+  android:shape="rectangle">
+  <gradient android:startColor="black" 
+    android:endColor="#00FF00"
+    android:layoutwi
+    android:angle="270" />
+  <corners android:radius="3dp" />
+  <stroke android:width="5px" android:color="#000000" />
+</shape>
+   
+
+    <Button
+        android:id="@+id/PiggyBank"
+        android:layout_width="476px"
+        android:layout_height="100px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Piggy Bank" />
+
+    <Button
+        android:id="@+id/Goals"
+        android:layout_width="476px"
+        android:layout_height="100px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/PiggyBank"
+        android:layout_marginTop="19dp"
+        android:text="Goals" />
+
+    <Button
+        android:id="@+id/Suggestions"
+        android:layout_width="476px"
+        android:layout_height="100px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Goals"
+        android:layout_marginTop="19dp"
+        android:text="Suggestions" />
 
 </RelativeLayout>
+ -->

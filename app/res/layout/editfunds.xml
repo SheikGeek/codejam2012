@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/whitebg" >
+
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:width="460dp"
+        android:height="40dp"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:layout_margin="5dp"
+        android:text="@string/amount"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:width="460dp"
+        android:height="40dp"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:layout_margin="5dp"
+        android:text="@string/name"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:width="460dp"
+        android:height="40dp"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:layout_margin="5dp"
+        android:text="@string/date"/>
+
+   <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date" >
+
+    </EditText>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="95dp"
+            android:background="@drawable/save"
+            android:height="35dp"
+            android:padding="10dp"
+            android:width="50dp" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/clear"
+            android:height="35dp"
+            android:padding="10dp"
+            android:width="100dp" />
+    </LinearLayout> 
+   
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:height="80dp"
+            android:text="@string/editF"
+            android:width="100dp"
+            android:background="#8ebc92"
+            android:textColor="#ffddee"
+            android:clickable="true"  />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:height="80dp"
+            android:text="@string/home"
+            android:width="100dp"
+            android:background="#e8c458"
+            android:textColor="#ffddee"
+            android:clickable="true"  />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:height="80dp"
+            android:text="@string/addG"
+            android:width="100dp"
+            android:background="#d05546"
+            android:textColor="#ffddee"
+            android:clickable="true" />
+    </LinearLayout>
+
+</LinearLayout>
